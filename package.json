@@ -1,0 +1,21 @@
+{
+  "name": "ocr-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "@ccxcus/ocr": "0.0.4",
+    "compression": "latest",
+    "cors": "latest",
+    "express": "latest",
+    "helmet": "latest",
+    "morgan": "latest",
+    "pdf-parse": "latest"
+  },
+  "license": "ISC"
+}
