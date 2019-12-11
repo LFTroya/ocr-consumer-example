@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ccxc/api
+    volumes:
+      - ./:/var/api
+    # command: /bin/bash -c "cd /home/api && rm -rf node_modules && npm install && npm run prestart && npm start"
+    ports:
+      - "3000:3000"
+    tty: true
+    # links:
+    #   - db
+    # depends_on:
+    #   - db
+    environment:
+      TZ: America/Bogota
+      DB_HOST: db
+    networks:
+      - app-network
+  db:
+    build:
+      context: .
+      dockerfile: DockerfilePostgres
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      TZ: America/Bogota
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
