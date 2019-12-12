@@ -3,7 +3,7 @@ const cors = require('cors');
 const morgan = require('morgan');
 const compression = require('compression');
 const helmet = require('helmet');
-const {scanInvoice} = require('@ccxcus/ocr');
+const {scanInvoice} = require('ccxc-ocr');
 const app = express();
 
 app.use(morgan('common'));
@@ -12,7 +12,7 @@ app.use(cors());
 app.use(compression());
 
 const log = console.log;
-const port = 8100;
+const port = 3000;
 const paths = {
   invoices: './invoices/invoice1.jpg'
 };

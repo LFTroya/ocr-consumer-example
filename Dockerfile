@@ -1,34 +1,27 @@
-# Check out https://hub.docker.com/_/node to select a new base image
-FROM node:11.15-alpine
+FROM ubuntu:18.04
 
-# Install java
-ENV JAVA_HOME=/usr/lib/jvm/zulu8-ca
+# Dependencies
+RUN apt-get update -y
+RUN apt-get install -y python-pip python-dev build-essential curl libkrb5-dev
+RUN apt update && apt install -y libsm6 libxext6
 
-RUN wget --quiet https://cdn.azul.com/public_keys/alpine-signing@azul.com-5d5dc44c.rsa.pub -P /etc/apk/keys/ && \
-    echo "https://repos.azul.com/zulu/alpine" >> /etc/apk/repositories && \
-    apk --no-cache add zulu8-jdk=8.0.232-r3
+# Install tesseract
+RUN apt-get -y install tesseract-ocr libtesseract-dev tesseract-ocr-spa
 
-# Install python
-RUN apk --no-cache add g++ gcc libgcc libstdc++ linux-headers make python
-RUN npm install --quiet node-gyp -g
+# Install nodejs
+RUN curl -sL https://deb.nodesource.com/setup_11.x | bash -
+RUN apt-get install nodejs -y
 
-# Create app directory (with user `node`)
+# Create folder and install node dependencies
 RUN mkdir -p /var/api
-
 WORKDIR /var/api
 
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-#COPY package*.json /var/api/
-#
-#RUN npm install
-
-# Bundle app source code
-COPY . .
-
-# Bind to all network interfaces so that it can be mapped to the host OS
 ENV HOST=0.0.0.0 PORT=3000
 
 EXPOSE ${PORT}
-#CMD [ "npm", "run", "start" ]
+
+
+
+
+
+
