@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 # Dependencies
 RUN apt-get update -y
-RUN apt-get install -y python-pip python-dev build-essential curl libkrb5-dev
+RUN apt-get install -y python-pip python-dev build-essential curl libkrb5-dev imagemagick ghostscript poppler-utils
 RUN apt update && apt install -y libsm6 libxext6
 
 # Install tesseract

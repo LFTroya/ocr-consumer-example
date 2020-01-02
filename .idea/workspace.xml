@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ce0243-19d3-4b08-ab52-12896315480f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docker/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/invoices/2019-12-09-17-36_694e2db6-c00d-4624-9889-c3999197a443_page-0001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/invoices/2019-12-09-17-36_694e2db6-c00d-4624-9889-c3999197a443_page-0002.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +27,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="11.15.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/invoices" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v11.15.0/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -38,6 +36,7 @@
       <recent name="$PROJECT_DIR$/docker" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/invoices" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -70,6 +69,9 @@
       <workItem from="1576102429875" duration="1216000" />
       <workItem from="1576106763756" duration="2971000" />
       <workItem from="1576110295239" duration="2503000" />
+      <workItem from="1576167601845" duration="638000" />
+      <workItem from="1576272441521" duration="1409000" />
+      <workItem from="1576509289298" duration="1698000" />
     </task>
     <servers />
   </component>
